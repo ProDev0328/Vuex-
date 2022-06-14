@@ -1,0 +1,45 @@
+{
+  "name": "vue-gmaps",
+  "description": "Vue.js plugin that allow search address and places using Google Maps API",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "webpack --progress --colors",
+    "commit": "./node_modules/.bin/git-cz",
+    "test": "standard --verbose | snazzy",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "keywords": [
+    "vue",
+    "google-maps-api",
+    "vue.js",
+    "google-maps"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ridermansb/vue-gmaps.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ridermansb/vue-gmaps/issues"
+  },
+  "author": "ridermansb <ridermansb@gmail.com> (http://ridermansb.me)",
+  "license": "GNU AGPLv3",
+  "dependencies": {
+    "load-google-maps-api": "0.0.2"
+  },
+  "devDependencies": {
+    "babel-core": "6.17.0",
+    "babel-loader": "6.2.5",
+    "babel-preset-es2015": "6.16.0",
+    "cz-conventional-changelog": "1.2.0",
+    "semantic-release": "^17.2.3",
+    "snazzy": "5.0.0",
+    "standard": "8.3.0",
+    "standard-loader": "5.0.0",
+    "webpack": "1.13.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
